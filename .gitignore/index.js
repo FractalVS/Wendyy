@@ -19,6 +19,32 @@ bot.on('message' , message =>{
             .setImage(var1[Math.floor(Math.random() *var1.length)])
             message.channel.send(luv_embed);
     }
+    
+        if(message.content.startsWith(prefix+'café')){
+        if(!message.mentions.members.first())return;
+        message.delete()
+        var personne1 = message.author.username
+        var personne2 =message.mentions.members.first()
+    
+        var café_embed = new Discord.RichEmbed()
+            .setColor("f442d7")
+            .setTitle(`${personne1} a fait un café pour ${personne2.user.username}`)
+            .setImage('https://imgur.com/vkgo57w.gif')
+        message.channel.send(café_embed)
+    }
+    
+    if(message.content.startsWith(prefix+'choco')){
+        if(!message.mentions.members.first())return;
+        message.delete()
+        var personne1 = message.author.username
+        var personne2 =message.mentions.members.first()
+    
+        var choco_embed = new Discord.RichEmbed()
+            .setColor("f442d7")
+            .setTitle(`${personne1} a fait un chocolat bien chaud pour ${personne2.user.username}`)
+            .setImage('https://imgur.com/WRfiCRj.gif')
+        message.channel.send(choco_embed)
+    }
 
     if(message.content === `${prefix}sing`){
         var var1 =["https://i.imgur.com/lTIl4o3.gif", "https://imgur.com/kmYJLbV.gif", "https://imgur.com/hxdY4k9.gif", "https://imgur.com/5OmoqcU.gif"]
