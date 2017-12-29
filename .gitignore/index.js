@@ -1,21 +1,16 @@
 const Discord = require('discord.js');
-bot = new Discord.Client();
 
+var bot = new Discord.Client();
 var prefix = (">");
+var randnum = 1;
 
-bot.on('ready', function() {
-    bot.user.setGame("Command: >help");
-    console.log('connected');
+bot.on('ready' , () => {
+    console.log('Bot Ready !');
 });
 
 bot.login('MzkxNDIyNTIyMDk4NDUwNDMz.DRYcLQ.QL_g-t24JmMVcmDKzRmIW_LQjQ0');
 
-
-bot.on('message', Message => {
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes \n ->help");
-    }
-
+bot.on('message' , message =>{
     if(message.content === `${prefix}luv`){
         var var1 =["https://imgur.com/bVg1YcR.gif", "https://imgur.com/aNQSun5.gif", "https://imgur.com/LC8HX9y.gif"]
         var luv_embed = new Discord.RichEmbed()
@@ -168,5 +163,16 @@ bot.on('message', Message => {
     }
 
 
+
+
+    if (message.content === prefix + "help"){
+        message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
+        console.log("Commande Help demandée !");
+    }
 });
 
+function random(min, max) {
+    min = Math.ceil(1)
+    max = Math.floor(3)
+    randnum = Math.floor(Math.random() * (max - min +1) + min)
+}
