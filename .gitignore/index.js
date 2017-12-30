@@ -95,7 +95,7 @@ bot.on('message' , message =>{
     if(message.content.startsWith(prefix+'cou')){
     if(!message.mentions.members.first())return;
     message.delete()
-    var cou_gif = ["https://i.imgur.com/YUzXTia.gif", "https://imgur.com/34F3Ph3.gif", "https://imgur.com/Tov1OSQ"]
+    var cou_gif = ["https://i.imgur.com/YUzXTia.gif", "https://imgur.com/34F3Ph3.gif", "https://imgur.com/Tov1OSQ.gif"]
     var personne1 = message.author.username
     var personne2 =message.mentions.members.first()
 
