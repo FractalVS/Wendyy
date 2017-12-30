@@ -73,22 +73,24 @@ bot.on('message' , message =>{
     }
 
     if(message.content === `${prefix}sad`){
+        var personne1 = message.author.username
         var var1 =["https://imgur.com/u9aoMeO.gif", "http://i.imgur.com/MMP74jx.gif", "https://imgur.com/04MkVmo.gif"]
         var sad_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setDescription(message.author.toString() + "  est tristounet ! 😢")
+            .setDescription(`**${personne1}** est tristounet ! 😢`)
             .setImage(var1[Math.floor(Math.random() *var1.length)])
-            message.channel.send({embed: sad_embed});
+            message.channel.send(sad_embed);
         console.log('>sad');
     }
 
     if(message.content === `${prefix}weeb`){
+        var personne1 = message.author.username
         var var1 =["https://imgur.com/1kVlop7.gif", "https://imgur.com/y9fcyQV.gif", "https://imgur.com/HdcdeRg.gif"]
             var weeb_embed = new Discord.RichEmbed()
                 .setColor("f442d7")
-                .setDescription(message.author.toString() + "  is a WEEB ! 😃")
+                .setDescription(`**${personne1}** is a WEEB ! 😃`)
                 .setImage(var1[Math.floor(Math.random() *var1.length)])
-                message.channel.send({embed: weeb_embed});
+                message.channel.send(weeb_embed);
             console.log('>weeb');
     }
     
