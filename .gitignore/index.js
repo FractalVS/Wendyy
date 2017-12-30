@@ -28,7 +28,7 @@ bot.on('message' , message =>{
     
         var café_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setTitle(`${personne1} a fait un café pour ${personne2.user.username}`)
+            .setTitle(`${personne1} a fait un café pour ${personne2.user.username} ☕`)
             .setImage('https://imgur.com/vkgo57w.gif')
         message.channel.send(café_embed)
     }
@@ -41,7 +41,7 @@ bot.on('message' , message =>{
     
         var choco_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setTitle(`${personne1} a fait un chocolat bien chaud pour ${personne2.user.username}`)
+            .setTitle(`${personne1} a fait un chocolat chaud pour ${personne2.user.username} ☕`)
             .setImage('https://imgur.com/WRfiCRj.gif')
         message.channel.send(choco_embed)
     }
