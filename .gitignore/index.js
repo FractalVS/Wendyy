@@ -51,7 +51,7 @@ bot.on('message' , message =>{
         var var1 =["https://i.imgur.com/lTIl4o3.gif", "https://imgur.com/kmYJLbV.gif", "https://imgur.com/hxdY4k9.gif", "https://imgur.com/5OmoqcU.gif"]
         var sing_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setDescription(`**${personne1}** Chante joyeusement ! `)
+            .setDescription(`**${personne1}** Chante avec passion ! `)
             .setImage(var1[Math.floor(Math.random() *var1.length)])
             message.channel.send(sing_embed);
         console.log('>sing')
