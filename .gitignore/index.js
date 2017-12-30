@@ -199,6 +199,7 @@ bot.on('message' , message =>{
         var1=message.author.username
         var2=message.mentions.members.first().user.username
         message.channel.send(`**${var1} lance une boule de neige sur ${var2} boom HEADSHOT!**`)
+        //End > 20 Mars 2018
     }
 
     if(message.content.includes("♥") || message.content.includes("😍") || message.content.includes("😳") || message.content.includes("❤") ) {
