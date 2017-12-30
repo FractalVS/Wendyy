@@ -20,7 +20,7 @@ bot.on('message' , message =>{
             message.channel.send(luv_embed);
     }
     
-        if(message.content.startsWith(prefix+'café')){
+    if(message.content.startsWith(prefix+'café')){
         if(!message.mentions.members.first())return;
         message.delete()
         var personne1 = message.author.username
@@ -30,7 +30,8 @@ bot.on('message' , message =>{
             .setColor("f442d7")
             .setTitle(`${personne1} a fait un café pour ${personne2.user.username} ☕`)
             .setImage('https://imgur.com/vkgo57w.gif')
-        message.channel.send(café_embed)
+            message.channel.send(café_embed)
+        console.log('>café')
     }
     
     if(message.content.startsWith(prefix+'choco')){
@@ -43,7 +44,8 @@ bot.on('message' , message =>{
             .setColor("f442d7")
             .setTitle(`${personne1} a fait un chocolat chaud pour ${personne2.user.username} ☕`)
             .setImage('https://imgur.com/WRfiCRj.gif')
-        message.channel.send(choco_embed)
+            message.channel.send(choco_embed)
+        console.log('>choco')
     }
 
         if(message.content === `${prefix}sing`){
