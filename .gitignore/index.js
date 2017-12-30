@@ -46,30 +46,36 @@ bot.on('message' , message =>{
         message.channel.send(choco_embed)
     }
 
-    if(message.content === `${prefix}sing`){
+        if(message.content === `${prefix}sing`){
+        var personne1 = message.author.username
         var var1 =["https://i.imgur.com/lTIl4o3.gif", "https://imgur.com/kmYJLbV.gif", "https://imgur.com/hxdY4k9.gif", "https://imgur.com/5OmoqcU.gif"]
         var sing_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setDescription(message.author.toString() + "  Chante joyeusement ! ")
+            .setDescription(`**${personne1}** Chante joyeusement ! `)
             .setImage(var1[Math.floor(Math.random() *var1.length)])
             message.channel.send(sing_embed);
+        console.log('>sing')
     }
 
     if(message.content === `${prefix}happy`){
+        var personne1 = message.author.username
         var var1 =["https://imgur.com/AtYhDOY.gif", "https://imgur.com/tkRxtAZ.gif", "https://imgur.com/vYhUDOq.gif"]
         var happy_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setDescription(message.author.toString() + "  est heureux! 😃")
+            .setDescription(`**${personne1}**  est heureux! 😃`)
             .setImage(var1[Math.floor(Math.random() *var1.length)])
             message.channel.send(happy_embed);
+        console.log('>happy')
     }    
 
     if(message.content === `${prefix}dab`){
+        var personne1 = message.author.username
         var dab_embed = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setDescription(message.author.toString() + "  is dabbing!")
+            .setDescription(`**${personne1}** is dabbing!`)
             .setImage('https://imgur.com/wfqDBqW.gif');
-            message.channel.send({embed: dab_embed});
+            message.channel.send(dab_embed);
+        console.log('>dab')
     }
 
     if(message.content === `${prefix}sad`){
@@ -82,6 +88,7 @@ bot.on('message' , message =>{
             message.channel.send(sad_embed);
         console.log('>sad');
     }
+
 
     if(message.content === `${prefix}weeb`){
         var personne1 = message.author.username
