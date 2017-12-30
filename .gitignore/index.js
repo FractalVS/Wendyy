@@ -102,7 +102,7 @@ bot.on('message' , message =>{
     if(personne2.id===(message.author.id)){
         var cou_embed1 = new Discord.RichEmbed()
             .setColor("f442d7")
-            .setTitle(`**${personne1} fais coucou dans le vide**`)
+            .setTitle(`**${personne1} fais coucou dans le vide 🤦**`)
             .setImage('https://imgur.com/D0WpRE1.gif')
         message.channel.send(cou_embed1)
         return;
