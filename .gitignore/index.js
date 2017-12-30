@@ -59,7 +59,7 @@ bot.on('message' , message =>{
     
         if(message.content === `${prefix}danse`){
         var personne1 = message.author.username
-        var var1 =["https://imgur.com/k8fQ4mN.gif", "https://imgur.com/qNcuqAK.gif", "https://imgur.com/JTm0e2e.gif", "https://imgur.com/0q8yMBY.gif", "https://imgur.com/b3oesw2.gif"]
+        var var1 =["https://imgur.com/k8fQ4mN.gif", "https://imgur.com/qNcuqAK.gif", "https://imgur.com/JTm0e2e.gif", "https://imgur.com/IQlQVIm.gif", "https://imgur.com/b3oesw2.gif"]
         var danse_embed = new Discord.RichEmbed()
             .setColor("f442d7")
             .setDescription(`**${personne1}** danse joyeusement ! 💃 `)
