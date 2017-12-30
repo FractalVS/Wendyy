@@ -91,6 +91,28 @@ bot.on('message' , message =>{
                 message.channel.send({embed: weeb_embed});
             console.log('>weeb');
     }
+    
+    if(message.content.startsWith(prefix+'cou')){
+    if(!message.mentions.members.first())return;
+    message.delete()
+    var cou_gif = ["https://i.imgur.com/YUzXTia.gif", "https://imgur.com/34F3Ph3.gif", "https://imgur.com/Tov1OSQ"]
+    var personne1 = message.author.username
+    var personne2 =message.mentions.members.first()
+
+    if(personne2.id===(message.author.id)){
+        var cou_embed1 = new Discord.RichEmbed()
+            .setColor("f442d7")
+            .setTitle(`**${personne1} fais coucou dans le vide**`)
+            .setImage('https://imgur.com/D0WpRE1.gif')
+        message.channel.send(cou_embed1)
+        return;
+    }
+    var cou_embed2 = new Discord.RichEmbed()
+        .setColor("f442d7")
+        .setTitle(`${personne1} fait un signe de la main à ${personne2.user.username}`)
+        .setImage(cou_gif[Math.floor(Math.random() * cou_gif.length)])
+    message.channel.send(cou_embed2)
+}
 
     if(message.content.startsWith(prefix+'poke')){
         if(!message.mentions.members.first())return;
