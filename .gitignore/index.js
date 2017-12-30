@@ -8,7 +8,7 @@ bot.on('ready' , () => {
     console.log('Bot Ready !');
 });
 
-bot.login('MzkxNDIyNTIyMDk4NDUwNDMz.DRYcLQ.QL_g-t24JmMVcmDKzRmIW_LQjQ0');
+bot.login('process.env.TOKEN');
 
 bot.on('message' , message =>{
     if(message.content === `${prefix}luv`){
